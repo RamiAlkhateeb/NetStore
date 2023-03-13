@@ -13,13 +13,19 @@ namespace Infrastructure.Data
     {
         public static async Task SeedData(StoreDatabaseContext context)
         {
-            if(!context.ProductBrands.Any())
+            if(!context.Products.Any())
             {
-                var brandsData = File.ReadAllText("../Infrasturcture/Data/SeedData/brands.json");
-                var brands = JsonSerializer.Deserialize<List<ProductBrand>>(brandsData);
-                context.AddRange(brands);
+                var productsData = File.ReadAllText("../Infrastructure/Data/SeedData/products.json");
+                var products = JsonSerializer.Deserialize<List<Product>>(productsData);
+                context.AddRange(products);
             }
 
+            if (!context.ProductImages.Any())
+            {
+                var Data = File.ReadAllText("../Infrastructure/Data/SeedData/productsImages.json");
+                var productsImges = JsonSerializer.Deserialize<List<ProductImage>>(Data);
+                context.AddRange(productsImges);
+            }
 
             if (context.ChangeTracker.HasChanges()) await context.SaveChangesAsync();
         }

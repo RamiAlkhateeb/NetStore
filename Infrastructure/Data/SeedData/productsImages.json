@@ -1,0 +1,22 @@
+[
+    {
+      "Id": 1,
+      "ProductId": 1,
+      "ImageUrl": "https://i.dummyjson.com/data/products/2/1.jpg" 
+    },
+    {
+      "Id": 2,
+      "ProductId": 1,
+      "ImageUrl": "https://i.dummyjson.com/data/products/2/2.jpg"
+    },
+    {
+      "Id": 3,
+      "ProductId": 1,
+      "ImageUrl": "https://i.dummyjson.com/data/products/2/3.jpg"
+    },
+    {
+      "Id": 4,       
+      "ProductId": 1,
+      "ImageUrl": "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+    }
+  ]

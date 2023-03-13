@@ -8,13 +8,17 @@ namespace Core.Entities
 {
     public class Product : BaseEntity
     {
-        public string Name { get; set; }
+        public string Title { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
-        public string PictureUrl { get; set; }
-        public ProductType ProductType { get; set; }
-        public int ProductTypeId { get; set; }
-        public ProductBrand ProductBrand { get; set; }
-        public int ProductBrandId { get; set; }
+        public decimal DiscountPercentage { get; set; }
+        public decimal Rating { get; set; }
+        public int Stock { get; set; }
+        public string Thumbnail { get; set; }
+        public string Category { get; set; }
+        public string Brand { get; set; }
+        
+        public ICollection<ProductImage> ProductImages { get; set; }
+       
     }
 }

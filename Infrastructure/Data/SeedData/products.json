@@ -1,146 +1,129 @@
 [
   {
-    "Name": "Angular Speedster Board 2000",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 200,
-    "PictureUrl": "images/products/sb-ang1.png",
-    "ProductTypeId": 1,
-    "ProductBrandId": 1
+    "Id": 1,
+    "Title": "iPhone 9",
+    "Description": "An apple mobile which is nothing like apple",
+    "Price": 549,
+    "DiscountPercentage": 12.96,
+    "Rating": 4.69,
+    "Stock": 94,
+    "Brand": "Apple",
+    "Category": "smartphones",
+    "Thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
   },
   {
-    "Name": "Green Angular Board 3000",
-    "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
-    "Price": 150,
-    "PictureUrl": "images/products/sb-ang2.png",
-    "ProductTypeId": 1,
-    "ProductBrandId": 1
+    "Id": 2,
+    "Title": "iPhone X",
+    "Description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+    "Price": 899,
+    "DiscountPercentage": 17.94,
+    "Rating": 4.44,
+    "Stock": 34,
+    "Brand": "Apple",
+    "Category": "smartphones",
+    "Thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
   },
   {
-    "Name": "Core Board Speed Rush 3",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Price": 180,
-    "PictureUrl": "images/products/sb-core1.png",
-    "ProductTypeId": 1,
-    "ProductBrandId": 2
+    "Id": 3,
+    "Title": "Samsung Universe 9",
+    "Description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+    "Price": 1249,
+    "DiscountPercentage": 15.46,
+    "Rating": 4.09,
+    "Stock": 36,
+    "Brand": "Samsung",
+    "Category": "smartphones",
+    "Thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg"
   },
   {
-    "Name": "Net Core Super Board",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 300,
-    "PictureUrl": "images/products/sb-core2.png",
-    "ProductTypeId": 1,
-    "ProductBrandId": 2
+    "Id": 4,
+    "Title": "OPPOF19",
+    "Description": "OPPO F19 is officially announced on April 2021.",
+    "Price": 280,
+    "DiscountPercentage": 17.91,
+    "Rating": 4.3,
+    "Stock": 123,
+    "Brand": "OPPO",
+    "Category": "smartphones",
+    "Thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+
   },
   {
-    "Name": "React Board Super Whizzy Fast",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 250,
-    "PictureUrl": "images/products/sb-react1.png",
-    "ProductTypeId": 1,
-    "ProductBrandId": 4
+    "Id": 5,
+    "Title": "Huawei P30",
+    "Description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+    "Price": 499,
+    "DiscountPercentage": 10.58,
+    "Rating": 4.09,
+    "Stock": 32,
+    "Brand": "Huawei",
+    "Category": "smartphones",
+    "Thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg"
+
   },
   {
-    "Name": "Typescript Entry Board",
-    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
-    "Price": 120,
-    "PictureUrl": "images/products/sb-ts1.png",
-    "ProductTypeId": 1,
-    "ProductBrandId": 5
+    "Id": 6,
+    "Title": "MacBook Pro",
+    "Description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
+    "Price": 1749,
+    "DiscountPercentage": 11.02,
+    "Rating": 4.57,
+    "Stock": 83,
+    "Brand": "Apple",
+    "Category": "laptops",
+    "Thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png"
+
   },
   {
-    "Name": "Core Blue Hat",
-    "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 10,
-    "PictureUrl": "images/products/hat-core1.png",
-    "ProductTypeId": 2,
-    "ProductBrandId": 2
+    "Id": 7,
+    "Title": "Samsung Galaxy Book",
+    "Description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+    "Price": 1499,
+    "DiscountPercentage": 4.15,
+    "Rating": 4.25,
+    "Stock": 50,
+    "Brand": "Samsung",
+    "Category": "laptops",
+    "Thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+
   },
   {
-    "Name": "Green React Woolen Hat",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Price": 8,
-    "PictureUrl": "images/products/hat-react1.png",
-    "ProductTypeId": 2,
-    "ProductBrandId": 4
+    "Id": 8,
+    "Title": "Microsoft Surface Laptop 4",
+    "Description": "Style and speed. Stand out on HD vIdeo calls backed by Studio Mics. Capture Ideas on the vibrant touchscreen.",
+    "Price": 1499,
+    "DiscountPercentage": 10.23,
+    "Rating": 4.43,
+    "Stock": 68,
+    "Brand": "Microsoft Surface",
+    "Category": "laptops",
+    "Thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
+
   },
   {
-    "Name": "Purple React Woolen Hat",
-    "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 15,
-    "PictureUrl": "images/products/hat-react2.png",
-    "ProductTypeId": 2,
-    "ProductBrandId": 4
+    "Id": 9,
+    "Title": "Infinix INBOOK",
+    "Description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
+    "Price": 1099,
+    "DiscountPercentage": 11.83,
+    "Rating": 4.54,
+    "Stock": 96,
+    "Brand": "Infinix",
+    "Category": "laptops",
+    "Thumbnail": "https://i.dummyjson.com/data/products/9/thumbnail.jpg"
+
   },
   {
-    "Name": "Blue Code Gloves",
-    "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
-    "Price": 18,
-    "PictureUrl": "images/products/glove-code1.png",
-    "ProductTypeId": 4,
-    "ProductBrandId": 3
-  },
-  {
-    "Name": "Green Code Gloves",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 15,
-    "PictureUrl": "images/products/glove-code2.png",
-    "ProductTypeId": 4,
-    "ProductBrandId": 3
-  },
-  {
-    "Name": "Purple React Gloves",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.",
-    "Price": 16,
-    "PictureUrl": "images/products/glove-react1.png",
-    "ProductTypeId": 4,
-    "ProductBrandId": 4
-  },
-  {
-    "Name": "Green React Gloves",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 14,
-    "PictureUrl": "images/products/glove-react2.png",
-    "ProductTypeId": 4,
-    "ProductBrandId": 4
-  },
-  {
-    "Name": "Redis Red Boots",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Price": 250,
-    "PictureUrl": "images/products/boot-redis1.png",
-    "ProductTypeId": 3,
-    "ProductBrandId": 6
-  },
-  {
-    "Name": "Core Red Boots",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
-    "Price": 189.99,
-    "PictureUrl": "images/products/boot-core2.png",
-    "ProductTypeId": 3,
-    "ProductBrandId": 2
-  },
-  {
-    "Name": "Core Purple Boots",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
-    "Price": 199.99,
-    "PictureUrl": "images/products/boot-core1.png",
-    "ProductTypeId": 3,
-    "ProductBrandId": 2
-  },
-  {
-    "Name": "Angular Purple Boots",
-    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
-    "Price": 150,
-    "PictureUrl": "images/products/boot-ang2.png",
-    "ProductTypeId": 3,
-    "ProductBrandId": 1
-  },
-  {
-    "Name": "Angular Blue Boots",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
-    "Price": 180,
-    "PictureUrl": "images/products/boot-ang1.png",
-    "ProductTypeId": 3,
-    "ProductBrandId": 1
+    "Id": 10,
+    "Title": "HP Pavilion 15-DK1056WM",
+    "Description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+    "Price": 1099,
+    "DiscountPercentage": 6.18,
+    "Rating": 4.43,
+    "Stock": 89,
+    "Brand": "HP Pavilion",
+    "Category": "laptops",
+    "Thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
+
   }
 ]
