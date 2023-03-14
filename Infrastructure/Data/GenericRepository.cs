@@ -1,13 +1,13 @@
 ﻿using Core.Entities;
 using Core.Interfaces;
 using Core.Specifications;
-using Infrastructue.Data;
+using Infrastructure.Data;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 
 //Repo Implementation
-public partial class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : BaseEntity
+public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : BaseEntity
 {
     //injecting and implementing based on DB provider
     private StoreDatabaseContext _context = null;
@@ -15,7 +15,6 @@ public partial class GenericRepository<TEntity> : IGenericRepository<TEntity> wh
     public GenericRepository(StoreDatabaseContext context)
     {
         _context = context;
-        //_table = _context.Set<TEntity>();
     }
     //public void Add(TEntity entity) => _table.Add(entity);
     //public IEnumerable<TEntity> GetAll() => _table.ToList();

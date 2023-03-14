@@ -10,9 +10,10 @@ namespace Core.Specifications
 {
     public class ProductsWithImagesSpecification : BasedSpecification<Product>
     {
-        public ProductsWithImagesSpecification()
+        public ProductsWithImagesSpecification(string sort)
         {
             AddInclude(x => x.ProductImages);
+            AddOrderBy(x => x.Title);
         }
 
         public ProductsWithImagesSpecification(int id) : base(x => x.Id == id)

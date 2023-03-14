@@ -7,7 +7,8 @@ import { ShopComponent } from './shop/shop.component';
 const routes: Routes = [
   {path : '' , component : ShopComponent},
   {path : 'shop/:id' , component : ProductDetailsComponent},
-  {path : 'profile' , component : ProfileComponent}
+  {path : 'profile' , component : ProfileComponent},
+  {path : '**' , redirectTo :'',  pathMatch : 'full'}
 
 ];
 
