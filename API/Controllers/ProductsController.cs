@@ -23,7 +23,7 @@ namespace API.Controllers
             _mapper = mapper;
         }
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts(string sort="")
+        public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts(string? sort)
         {
             var spec = new ProductsWithImagesSpecification(sort);
             var products = await _genericRepository.ListAsync(spec);
@@ -37,5 +37,16 @@ namespace API.Controllers
             var product =await _genericRepository.GetEntityWithSpec(spec);
             return _mapper.Map<Product,ProductToReturnDto>(product);
         }
+
+        [HttpGet("categories")]
+        public async Task<ActionResult<IReadOnlyList<Product>>> GetProductBrands(string distinctBy)
+        {
+            //var spec = new DistinctSelectSpecification(distinctBy);
+            //var list = await _genericRepository.ListAsync(spec);
+            return Ok();
+
+        }
+
+
     }
 }

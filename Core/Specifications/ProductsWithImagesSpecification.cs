@@ -14,6 +14,18 @@ namespace Core.Specifications
         {
             AddInclude(x => x.ProductImages);
             AddOrderBy(x => x.Title);
+
+            if (!string.IsNullOrEmpty(sort))
+            {
+                switch(sort)
+                {
+                    case "priceAsc": AddOrderBy(x => x.Price); break;
+                    case "priceDesc": AddOrderByDescending(x => x.Price); break;
+                    default: AddOrderBy(x => x.Title); break;
+                }
+
+                
+            }
         }
 
         public ProductsWithImagesSpecification(int id) : base(x => x.Id == id)

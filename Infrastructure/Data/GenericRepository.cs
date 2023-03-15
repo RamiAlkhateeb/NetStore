@@ -11,20 +11,11 @@ public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEnt
 {
     //injecting and implementing based on DB provider
     private StoreDatabaseContext _context = null;
-    //private DbSet<TEntity> _table = null;
     public GenericRepository(StoreDatabaseContext context)
     {
         _context = context;
     }
-    //public void Add(TEntity entity) => _table.Add(entity);
-    //public IEnumerable<TEntity> GetAll() => _table.ToList();
-    //public TEntity GetById(int entityId) => _table.Find(entityId);
-    //public void Update(TEntity entity) => _table.Attach(entity);
-    //public void Delete(int entityId)
-    //{
-    //    TEntity entity = _table.Find(entityId);
-    //    _table.Remove(entity);
-    //}
+   
     public int SaveChanges() => _context.SaveChanges();
 
     public async Task<IReadOnlyList<TEntity>> ListAllAsync()
@@ -78,5 +69,14 @@ public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEnt
 //        _context.Entry(entity);
 //    }
 //    public async ValueTask<int> SaveChangesAsync() => await _context.SaveChangesAsync();
+//}
+//public void Add(TEntity entity) => _table.Add(entity);
+//public IEnumerable<TEntity> GetAll() => _table.ToList();
+//public TEntity GetById(int entityId) => _table.Find(entityId);
+//public void Update(TEntity entity) => _table.Attach(entity);
+//public void Delete(int entityId)
+//{
+//    TEntity entity = _table.Find(entityId);
+//    _table.Remove(entity);
 //}
 

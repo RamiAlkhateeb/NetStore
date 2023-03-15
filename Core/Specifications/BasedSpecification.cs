@@ -42,8 +42,7 @@ namespace Core.Specifications
             OrderByDescending = orderByDescExpression;
         }
 
-
-
+        
 
     }
 }
