@@ -12,6 +12,11 @@ export class ShopComponent implements OnInit{
   products : Product[] = [];
   types : string[] = [];
   typeSelected = "";
+
+  brands : string[] = [];
+  brandSelected = "";
+
+
   sortSelected = 'name'
   sortOptions = [
     {name : 'Alphabetical' , value: 'name'},
@@ -23,33 +28,40 @@ export class ShopComponent implements OnInit{
   constructor(private shopService : ShopService) {  }
   ngOnInit(): void {
     this.getProducts();
-    this.gettypes();
+    this.getCategories();
+    this.getBrands();
   }
 
   getProducts(){
-    this.shopService.getProducts(this.typeSelected , this.sortSelected).subscribe({
-      next: response => {
-        this.products = response , 
-        this.types = ['All',...new Set(response.map((item) => item.category))]
-      }, 
+    this.shopService.getProducts(this.typeSelected ,this.brandSelected, this.sortSelected).subscribe({
+      next: response => this.products = response ,
       error : error => console.log(error),
     })
   }
 
-  gettypes(){
-    // this.shopService.getTypes().subscribe({
-    //   next: response =>  this.types = ['All' , ...response],
-    //   error : error => console.log(error)
-    // })
-    this.shopService.getProducts(this.typeSelected , this.sortSelected).subscribe({
-      next: response => this.types = ['All',...new Set(response.map((item) => item.category))],
+  getCategories(){
+    this.shopService.getTypes().subscribe({
+      next: response => this.types = ['All',...response], 
       error : error => console.log(error),
     })
-    //this.types = [...new Set(this.products.map((item) => item.category))]
   }
+
+  getBrands(){
+    this.shopService.getBrands().subscribe({
+      next: response => this.brands = ['All',...response], 
+      error : error => console.log(error),
+    })
+  }
+
+  
 
   onTypeSelected (type : string){
     this.typeSelected = type
+    this.getProducts()
+  }
+
+  onBrandSelected (brand : string){
+    this.brandSelected = brand
     this.getProducts()
   }
 

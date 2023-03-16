@@ -1,4 +1,5 @@
 ﻿using API.Dtos;
+using API.Helpers;
 using AutoMapper;
 using Core.Entities;
 using Core.Interfaces;
@@ -23,11 +24,16 @@ namespace API.Controllers
             _mapper = mapper;
         }
         [HttpGet]
-        public async Task<ActionResult<IReadOnlyList<ProductToReturnDto>>> GetProducts(string? sort)
+        public async Task<ActionResult<Pagination<ProductToReturnDto>>> GetProducts(
+            [FromQuery]ProductSpecParams productParams)
         {
-            var spec = new ProductsWithImagesSpecification(sort);
+            var spec = new ProductsWithImagesSpecification(productParams);
+            var countSpec = new ProductWithFiltersForCountSpecification(productParams);
+            var totalItems = await _genericRepository.CountAsync(countSpec);
             var products = await _genericRepository.ListAsync(spec);
-            return Ok(_mapper.Map<IReadOnlyList<Product> , IReadOnlyList<ProductToReturnDto>>(products));
+            var data = _mapper.Map<IReadOnlyList<Product>, IReadOnlyList<ProductToReturnDto>>(products);
+
+            return Ok(new Pagination<ProductToReturnDto>(productParams.PageIndex , productParams.PageSize, totalItems, data));
         }
 
         [HttpGet("{id}")]
@@ -39,11 +45,22 @@ namespace API.Controllers
         }
 
         [HttpGet("categories")]
-        public async Task<ActionResult<IReadOnlyList<Product>>> GetProductBrands(string distinctBy)
+        public async Task<ActionResult<IReadOnlyList<Product>>> GetCategories()
         {
-            //var spec = new DistinctSelectSpecification(distinctBy);
-            //var list = await _genericRepository.ListAsync(spec);
-            return Ok();
+            var products = await _genericRepository.ListAllAsync();
+            var categories = products.Select(x => x.Category).Distinct().ToList();
+            
+            return Ok(categories);
+
+        }
+
+        [HttpGet("brands")]
+        public async Task<ActionResult<IReadOnlyList<Product>>> GetBrands()
+        {
+            var products = await _genericRepository.ListAllAsync();
+            var brands = products.Select(x => x.Brand).Distinct().ToList();
+
+            return Ok(brands);
 
         }
 
