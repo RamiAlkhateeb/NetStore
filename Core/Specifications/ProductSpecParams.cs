@@ -21,7 +21,7 @@ namespace Core.Specifications
         public string? Category { get; set; }
         public string? Sort { get; set; }
         public string _search;
-        public string Search
+        public string? Search
         {
             get => _search;
             set => _search = value.ToLower();
