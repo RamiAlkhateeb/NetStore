@@ -6,7 +6,7 @@ namespace Infrastructure.Data
 {
     public class StoreDatabaseContext : DbContext
     {
-        public StoreDatabaseContext(DbContextOptions options) : base(options)
+        public StoreDatabaseContext(DbContextOptions<StoreDatabaseContext> options) : base(options)
         {
         }
 

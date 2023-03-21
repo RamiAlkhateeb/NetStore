@@ -13,7 +13,7 @@ export class ShopService {
   constructor(private http: HttpClient) { }
 
   getProducts(shopParams : ShopParams){
-    debugger
+    
     let params = new HttpParams()
     let categories = ""
     params = params.append('sort',shopParams.sort)
@@ -23,8 +23,12 @@ export class ShopService {
     if (shopParams.pageSize > 0) params = params.append('pagesize',shopParams.pageSize)
     if (shopParams.category.length > 0 && shopParams.category != "All") params = params.append('category',shopParams.category)
     if (shopParams.brand.length > 0 && shopParams.brand != "All") params = params.append('brand',shopParams.brand)
-
+    if (shopParams.search) params = params.append('search',shopParams.search)
     return this.http.get<Pagination<Product[]>>(this.baseUrl + "products"  , {params})
+  }
+
+  getProduct(id:number){
+    return this.http.get<Product>(this.baseUrl+ 'products/' + id)
   }
 
   getTypes(){

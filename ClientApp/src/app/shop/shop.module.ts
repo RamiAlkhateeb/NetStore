@@ -4,6 +4,8 @@ import { ShopComponent } from './shop.component';
 import { ProductItemComponent } from './product-item/product-item.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { SharedModule } from '../shared/shared.module';
+import { RouterModule } from '@angular/router';
+import { ShopRoutingModule } from './shop-routing.module';
 
 
 
@@ -15,10 +17,12 @@ import { SharedModule } from '../shared/shared.module';
   ],
   imports: [
     CommonModule,
-    SharedModule
-  ],
-  exports:[
-    ShopComponent
+    SharedModule,
+    ShopRoutingModule
   ]
+  // since we are using lazing loading now
+  // exports:[
+  //   ShopComponent
+  // ]
 })
 export class ShopModule { }

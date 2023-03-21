@@ -18,7 +18,7 @@ import { ProfileModule } from './profile/profile.module';
     BrowserAnimationsModule,
     HttpClientModule,
     CoreModule,
-    ShopModule,
+    //ShopModule, since we are using lazy loading now
     ProfileModule
   ],
   providers: [],

@@ -73,3 +73,17 @@ C:\Work\NetStore\API\bin\Debug\net6.0\AutoMapper.dll
 C:\Work\NetStore\API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Work\NetStore\API\bin\Debug\net6.0\Pipelines.Sockets.Unofficial.dll
 C:\Work\NetStore\API\bin\Debug\net6.0\StackExchange.Redis.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\System.Security.Permissions.dll
