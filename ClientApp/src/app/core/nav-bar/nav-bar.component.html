@@ -4,21 +4,29 @@
      
 
       <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="me-3 py-2 " routerLink="/" routerLinkActive="active">Home</a>
         <a class="me-3 py-2 " 
-        routerLink="/"
+        routerLink="/shop"
         routerLinkActive="active"
         [routerLinkActiveOptions]="{exact: true}"
         >Shop</a>
-        <a class="me-3 py-2 " routerLink="/contact" routerLinkActive="active">Contact</a>
         <a class="me-3 py-2 " routerLink="/profile" routerLinkActive="active">Profile</a>
       </nav>
       <div class="d-flex align-items-center">
-        <a class="position-relative">
+        <a routerLink="/basket" class="position-relative">
             <i class="fa fa-shopping-cart fa-2x me-5 text-dark"></i>
-            <div class="cart-no">5</div>
+            <div *ngIf="(basketService.basketSource$ | async) as basket" class="cart-no">
+              {{getCount(basket.items)}}
+            </div>
         </a>
-        <a routerLink="/account/login" class="btn btn-outline-secondary me-2">Login</a>
-        <a routerLink="/account/register" class="btn btn-outline-secondary me-2">Sign up</a>
+        <ng-container *ngIf="(accountService.currentUser$ | async) === null">
+          <a routerLink="/account/login" class="btn btn-outline-secondary me-2">Login</a>
+          <a routerLink="/account/register" class="btn btn-outline-secondary me-2">Sign up</a>
+        </ng-container>
+        <ng-container *ngIf="accountService.currentUser$ | async as user" >
+          Welcome {{ user.displayName}}
+        </ng-container>
+        
 
       </div>
 

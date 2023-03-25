@@ -17,6 +17,7 @@ export class ProductDetailsComponent implements OnInit {
 
   }
   ngOnInit(): void {
+    debugger
     this.loadProduct()
   }
 
