@@ -12,6 +12,8 @@ namespace API.Helpers
             o.MapFrom(s => s.ProductImages.Select( e => e.ImageUrl).ToList()));
 
             CreateMap<Address, AddressDto>().ReverseMap(); // to use it both ways
+            CreateMap<CustomerBasketDto, CustomerBasket>();
+            CreateMap<BasketItemDto, BasketItem>();
         }
 
     }
