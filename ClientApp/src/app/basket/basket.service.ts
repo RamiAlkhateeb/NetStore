@@ -48,7 +48,7 @@ export class BasketService {
     this.setBasket(basket)
   }
 
-  removeItemToBasket(id : number, quantity = 1){
+  removeItemFromBasket(id : number, quantity = 1){
     const basket = this.getCurrnetBasketValue()
     if(!basket) return
     const item = basket.items.find(x => x.id ===id)
