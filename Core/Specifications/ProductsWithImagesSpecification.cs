@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Core.Specifications
 {
-    public class ProductsWithImagesSpecification : BasedSpecification<Product>
+    public class ProductsWithImagesSpecification : BaseSpecification<Product>
     {
         public ProductsWithImagesSpecification(ProductSpecParams productParams)
             : base(x =>

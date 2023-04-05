@@ -38,10 +38,22 @@ public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEnt
 
     private IQueryable<TEntity> ApplySpecification (ISpecification<TEntity> specification)
         => SpecificationEvaluator<TEntity>.GetQuery(_context.Set<TEntity>().AsQueryable(), specification);
-    
 
-    
-    
+    public void Add(TEntity entity)
+    {
+        _context.Set<TEntity>().Add(entity);
+    }
+
+    public void Update(TEntity entity)
+    {
+        _context.Set<TEntity>().Attach(entity);
+        _context.Entry(entity).State= EntityState.Modified;
+    }
+
+    public void Delete(TEntity entity)
+    {
+        _context.Set<TEntity>().Remove(entity);
+    }
 }
 
 

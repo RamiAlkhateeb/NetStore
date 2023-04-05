@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Core.Specifications
 {
-    public class BasedSpecification<T> : ISpecification<T>
+    public class BaseSpecification<T> : ISpecification<T>
     {
         public Expression<Func<T, bool>> Creteria { get; }
         public List<Expression<Func<T, object>>> Includes { get; } =
@@ -23,11 +23,11 @@ namespace Core.Specifications
 
         public bool IsPagingEnabled { get; private set; }
 
-        public BasedSpecification()
+        public BaseSpecification()
         {
         }
 
-        public BasedSpecification(Expression<Func<T, bool>> creteria)
+        public BaseSpecification(Expression<Func<T, bool>> creteria)
         {
             Creteria = creteria;
         }

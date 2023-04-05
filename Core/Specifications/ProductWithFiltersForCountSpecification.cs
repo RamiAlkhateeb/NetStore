@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Core.Specifications
 {
-    public class ProductWithFiltersForCountSpecification : BasedSpecification<Product>
+    public class ProductWithFiltersForCountSpecification : BaseSpecification<Product>
     {
         public ProductWithFiltersForCountSpecification(ProductSpecParams productParams) : base(x =>
                 (string.IsNullOrEmpty(productParams.Search) || x.Title.ToLower().Contains(productParams.Search)) &&
