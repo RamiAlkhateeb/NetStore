@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AccountModule } from './account/account.module';
 import { BasketModule } from './basket/basket.module';
 import { CheckoutModule } from './checkout/checkout.module';
-import { AuthGuard } from './core/guards/auth.guard';
+import { canActivate } from './core/guards/auth.guard';
 import { NotFoundComponent } from './core/not-found/not-found.component';
 import { ServerErrorComponent } from './core/server-error/server-error.component';
 import { ProfileComponent } from './profile/profile.component';
@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'basket', loadChildren: () => import('./basket/basket.module').then(m => BasketModule) },
   {
     path: 'checkout',
-    canActivate : [AuthGuard],
+    canActivate : [canActivate],
     loadChildren: () => import('./checkout/checkout.module').then(m => CheckoutModule)
   },
   { path: '', component: ProfileComponent },
