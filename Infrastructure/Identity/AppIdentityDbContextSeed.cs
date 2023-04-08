@@ -26,8 +26,7 @@ namespace Infrastructure.Identity
                         Street = "123 Main St",
                         Country = "United States",
                         City = "Anytown",
-                        ZipCode = "12345",
-                        AddressDiscription = "Home",
+                        ZipCode = "12345"
                         //AppUserId = "12345"
                     }
                 };
