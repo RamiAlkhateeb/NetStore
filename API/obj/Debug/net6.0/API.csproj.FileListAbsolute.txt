@@ -87,3 +87,15 @@ C:\Work\NetStore\API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Work\NetStore\API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Work\NetStore\API\bin\Debug\net6.0\System.Security.Permissions.dll
 C:\Work\NetStore\API\obj\Debug\net6.0\API.MvcApplicationPartsAssemblyInfo.cs
+C:\Work\NetStore\API\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\Stripe.net.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Work\NetStore\API\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
