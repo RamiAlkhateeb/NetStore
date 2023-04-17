@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { PagingHeaderComponent } from './paging-header/paging-header.component';
 import { PagerComponent } from './pager/pager.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OrderTotalsComponent } from './order-totals/order-totals.component';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { TextInputComponent } from './components/text-input/text-input.component';
@@ -27,6 +27,7 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     PaginationModule.forRoot(), // As singleton
     ReactiveFormsModule,
+    FormsModule,
     BsDropdownModule.forRoot(),
     CdkStepperModule,
     RouterModule
