@@ -29,7 +29,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseStaticFiles();
-var ss = Path.Combine(Directory.GetCurrentDirectory(), "Content");
 app.UseStaticFiles(new StaticFileOptions
 {
     FileProvider = new PhysicalFileProvider(

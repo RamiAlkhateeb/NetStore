@@ -212,6 +212,10 @@
               "target": "Package",
               "version": "[6.27.0, )"
             },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
             "StackExchange.Redis": {
               "target": "Package",
               "version": "[2.6.96, )"

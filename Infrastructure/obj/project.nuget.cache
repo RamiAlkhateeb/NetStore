@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Rs5AYrTl7KbtZfG0weZpDv5IEaYZmc4p3AeqzM47SQE2OZunVU5azDzLHJE6S3/siw2X4+m9ScWBHLyagLdXpw==",
+  "dgSpecHash": "IS+NMc6hjCAXl5q0Vhn545VZQNV7dNmTYGe9+C6hLgBY4uGrLmadfuNjAXbM1l7N2TKYjRMxpMn0UXMWhPxdnw==",
   "success": true,
   "projectFilePath": "C:\\Work\\NetStore\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -58,6 +58,8 @@
     "C:\\Users\\rami.alkhateeb\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\rami.alkhateeb\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\rami.alkhateeb\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\rami.alkhateeb\\.nuget\\packages\\npgsql\\6.0.8\\npgsql.6.0.8.nupkg.sha512",
+    "C:\\Users\\rami.alkhateeb\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\6.0.8\\npgsql.entityframeworkcore.postgresql.6.0.8.nupkg.sha512",
     "C:\\Users\\rami.alkhateeb\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.2\\pipelines.sockets.unofficial.2.2.2.nupkg.sha512",
     "C:\\Users\\rami.alkhateeb\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.2\\sqlitepclraw.bundle_e_sqlite3.2.1.2.nupkg.sha512",
     "C:\\Users\\rami.alkhateeb\\.nuget\\packages\\sqlitepclraw.core\\2.1.2\\sqlitepclraw.core.2.1.2.nupkg.sha512",

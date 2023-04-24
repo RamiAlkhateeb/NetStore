@@ -11,7 +11,7 @@ import { AccountService } from '../account.service';
 })
 export class RegisterComponent {
 
-  errors : string | null = null
+  errors : string[] | null = null
 
   constructor(private fb : FormBuilder,
     private accountService : AccountService,
@@ -22,7 +22,7 @@ export class RegisterComponent {
   registerForm = this.fb.group({
     displayName: ['' , Validators.required],
     email : ['', [Validators.required , Validators.email], [this.validateEmailNotTaken()]],
-    password : ['', [Validators.required ,Validators.pattern(this.complexPassword) ]]
+    password : ['', [Validators.required /*,Validators.pattern(this.complexPassword)*/ ]]
   })
 
   onSubmit(){
