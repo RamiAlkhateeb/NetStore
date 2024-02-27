@@ -17,6 +17,8 @@ namespace Core.Entities
         public string Thumbnail { get; set; }
         public string Category { get; set; }
         public string Brand { get; set; }
+
+        public bool IsActive { get; set; } = true;
         
         public ICollection<ProductImage> ProductImages { get; set; }
        
