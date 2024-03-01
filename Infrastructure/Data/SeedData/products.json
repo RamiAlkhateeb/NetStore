@@ -1,129 +1,14 @@
-[
-  {
-    "Id": 1,
-    "Title": "iPhone 9",
-    "Description": "An apple mobile which is nothing like apple",
-    "Price": 549,
-    "DiscountPercentage": 12.96,
-    "Rating": 4.69,
-    "Stock": 94,
-    "Brand": "Apple",
-    "Category": "smartphones",
-    "Thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
-  },
-  {
-    "Id": 2,
-    "Title": "iPhone X",
-    "Description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-    "Price": 899,
-    "DiscountPercentage": 17.94,
-    "Rating": 4.44,
-    "Stock": 34,
-    "Brand": "Apple",
-    "Category": "smartphones",
-    "Thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
-  },
-  {
-    "Id": 3,
-    "Title": "Samsung Universe 9",
-    "Description": "Samsung's new variant which goes beyond Galaxy to the Universe",
-    "Price": 1249,
-    "DiscountPercentage": 15.46,
-    "Rating": 4.09,
-    "Stock": 36,
-    "Brand": "Samsung",
-    "Category": "smartphones",
-    "Thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg"
-  },
-  {
-    "Id": 4,
-    "Title": "OPPOF19",
-    "Description": "OPPO F19 is officially announced on April 2021.",
-    "Price": 280,
-    "DiscountPercentage": 17.91,
-    "Rating": 4.3,
-    "Stock": 123,
-    "Brand": "OPPO",
-    "Category": "smartphones",
-    "Thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
-
-  },
-  {
-    "Id": 5,
-    "Title": "Huawei P30",
-    "Description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
-    "Price": 499,
-    "DiscountPercentage": 10.58,
-    "Rating": 4.09,
-    "Stock": 32,
-    "Brand": "Huawei",
-    "Category": "smartphones",
-    "Thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg"
-
-  },
-  {
-    "Id": 6,
-    "Title": "MacBook Pro",
-    "Description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
-    "Price": 1749,
-    "DiscountPercentage": 11.02,
-    "Rating": 4.57,
-    "Stock": 83,
-    "Brand": "Apple",
-    "Category": "laptops",
-    "Thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png"
-
-  },
-  {
-    "Id": 7,
-    "Title": "Samsung Galaxy Book",
-    "Description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
-    "Price": 1499,
-    "DiscountPercentage": 4.15,
-    "Rating": 4.25,
-    "Stock": 50,
-    "Brand": "Samsung",
-    "Category": "laptops",
-    "Thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
-
-  },
-  {
-    "Id": 8,
-    "Title": "Microsoft Surface Laptop 4",
-    "Description": "Style and speed. Stand out on HD vIdeo calls backed by Studio Mics. Capture Ideas on the vibrant touchscreen.",
-    "Price": 1499,
-    "DiscountPercentage": 10.23,
-    "Rating": 4.43,
-    "Stock": 68,
-    "Brand": "Microsoft Surface",
-    "Category": "laptops",
-    "Thumbnail": "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
-
-  },
-  {
-    "Id": 9,
-    "Title": "Infinix INBOOK",
-    "Description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
-    "Price": 1099,
-    "DiscountPercentage": 11.83,
-    "Rating": 4.54,
-    "Stock": 96,
-    "Brand": "Infinix",
-    "Category": "laptops",
-    "Thumbnail": "https://i.dummyjson.com/data/products/9/thumbnail.jpg"
-
-  },
-  {
-    "Id": 10,
-    "Title": "HP Pavilion 15-DK1056WM",
-    "Description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
-    "Price": 1099,
-    "DiscountPercentage": 6.18,
-    "Rating": 4.43,
-    "Stock": 89,
-    "Brand": "HP Pavilion",
-    "Category": "laptops",
-    "Thumbnail": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg"
-
-  }
-]
+//[
+//  {
+//    "Id": 1,
+//    "Title": "iPhone 9",
+//    "Description": "An apple mobile which is nothing like apple",
+//    "Price": 549,
+//    "DiscountPercentage": 12.96,
+//    "Rating": 4.69,
+//    "Stock": 94,
+//    "Brand": "Apple",
+//    "Category": "smartphones",
+//    "Thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+//  }
+//]

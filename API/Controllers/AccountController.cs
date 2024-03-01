@@ -33,13 +33,18 @@ namespace API.Controllers
         public async Task<ActionResult<UserDto>> GetCurrentUser()
         {
             var user = await _userManager.FindByEmailFromClaimsPrinciple(User);
-
-            return new UserDto
+            if (user != null)
             {
-                Email = user.Email,
-                DisplayName = user.DisplayName,
-                Token = _tokenService.CreateToken(user)
-            };
+                return new UserDto
+                {
+                    Email = user.Email,
+                    DisplayName = user.DisplayName,
+                    Token = _tokenService.CreateToken(user)
+                };
+            }
+            else
+                return new UserDto { };
+            
         }
 
         [HttpGet("emailexists")]

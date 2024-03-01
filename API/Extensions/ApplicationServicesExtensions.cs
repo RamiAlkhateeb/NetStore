@@ -21,7 +21,8 @@ namespace API.Extensions
             services.AddSwaggerGen();
             services.AddDbContext<StoreDatabaseContext>(opt =>
             {
-                opt.UseNpgsql(config.GetConnectionString("DefaultConnection"));
+                //opt.UseNpgsql(config.GetConnectionString("DefaultConnection"));
+                opt.UseSqlite(config.GetConnectionString("DefaultConnectionLocal"));
             });
             services.AddSingleton<IConnectionMultiplexer>(c =>
             {

@@ -5,47 +5,40 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace Infrastructure.Data.Migrations
+namespace Infrastructure.Migrations
 {
     [DbContext(typeof(StoreDatabaseContext))]
-    [Migration("20240227102751_DropBooksTable")]
-    partial class DropBooksTable
+    [Migration("20240229064231_InitialMigration")]
+    partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
-            modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.14")
-                .HasAnnotation("Relational:MaxIdentifierLength", 63);
-
-            NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
+            modelBuilder.HasAnnotation("ProductVersion", "6.0.14");
 
             modelBuilder.Entity("Core.Entities.OrderAggregate.DeliveryMethod", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("DeliveryTime")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("TEXT");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("numeric(18,2)");
+                    b.Property<double>("Price")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("ShortName")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
@@ -56,29 +49,27 @@ namespace Infrastructure.Data.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("BuyerEmail")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("TEXT");
 
                     b.Property<int>("DeliveryMethodId")
-                        .HasColumnType("integer");
+                        .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("OrderDate")
-                        .HasColumnType("timestamp with time zone");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("PaymentIntentId")
-                        .HasColumnType("text");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Status")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("TEXT");
 
-                    b.Property<decimal>("Subtotal")
-                        .HasColumnType("numeric");
+                    b.Property<double>("Subtotal")
+                        .HasColumnType("REAL");
 
                     b.HasKey("Id");
 
@@ -91,18 +82,16 @@ namespace Infrastructure.Data.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                        .HasColumnType("INTEGER");
 
                     b.Property<int?>("OrderId")
-                        .HasColumnType("integer");
+                        .HasColumnType("INTEGER");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("numeric(18,2)");
+                    b.Property<double>("Price")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("Quantity")
-                        .HasColumnType("integer");
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
 
@@ -115,46 +104,44 @@ namespace Infrastructure.Data.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Brand")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Category")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasMaxLength(180)
-                        .HasColumnType("character varying(180)");
+                        .HasColumnType("TEXT");
 
-                    b.Property<decimal>("DiscountPercentage")
-                        .HasColumnType("numeric");
+                    b.Property<double>("DiscountPercentage")
+                        .HasColumnType("REAL");
 
                     b.Property<bool>("IsActive")
-                        .HasColumnType("boolean");
+                        .HasColumnType("INTEGER");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("numeric(18,2)");
+                    b.Property<double>("Price")
+                        .HasColumnType("decimal(18,2)");
 
-                    b.Property<decimal>("Rating")
-                        .HasColumnType("numeric");
+                    b.Property<double>("Rating")
+                        .HasColumnType("REAL");
 
                     b.Property<int>("Stock")
-                        .HasColumnType("integer");
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Thumbnail")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasMaxLength(100)
-                        .HasColumnType("character varying(100)");
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
@@ -165,16 +152,14 @@ namespace Infrastructure.Data.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("ImageUrl")
                         .IsRequired()
-                        .HasColumnType("text");
+                        .HasColumnType("TEXT");
 
                     b.Property<int>("ProductId")
-                        .HasColumnType("integer");
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
 
@@ -194,31 +179,31 @@ namespace Infrastructure.Data.Migrations
                     b.OwnsOne("Core.Entities.OrderAggregate.Address", "ShipToAddress", b1 =>
                         {
                             b1.Property<int>("OrderId")
-                                .HasColumnType("integer");
+                                .HasColumnType("INTEGER");
 
                             b1.Property<string>("City")
                                 .IsRequired()
-                                .HasColumnType("text");
+                                .HasColumnType("TEXT");
 
                             b1.Property<string>("Country")
                                 .IsRequired()
-                                .HasColumnType("text");
+                                .HasColumnType("TEXT");
 
                             b1.Property<string>("FirstName")
                                 .IsRequired()
-                                .HasColumnType("text");
+                                .HasColumnType("TEXT");
 
                             b1.Property<string>("LastName")
                                 .IsRequired()
-                                .HasColumnType("text");
+                                .HasColumnType("TEXT");
 
                             b1.Property<string>("Street")
                                 .IsRequired()
-                                .HasColumnType("text");
+                                .HasColumnType("TEXT");
 
                             b1.Property<string>("ZipCode")
                                 .IsRequired()
-                                .HasColumnType("text");
+                                .HasColumnType("TEXT");
 
                             b1.HasKey("OrderId");
 
@@ -244,18 +229,18 @@ namespace Infrastructure.Data.Migrations
                     b.OwnsOne("Core.Entities.OrderAggregate.ProductItemOrdered", "ItemOrdered", b1 =>
                         {
                             b1.Property<int>("OrderItemId")
-                                .HasColumnType("integer");
+                                .HasColumnType("INTEGER");
 
                             b1.Property<string>("PictureUrl")
                                 .IsRequired()
-                                .HasColumnType("text");
+                                .HasColumnType("TEXT");
 
                             b1.Property<int>("ProductItemId")
-                                .HasColumnType("integer");
+                                .HasColumnType("INTEGER");
 
                             b1.Property<string>("ProductName")
                                 .IsRequired()
-                                .HasColumnType("text");
+                                .HasColumnType("TEXT");
 
                             b1.HasKey("OrderItemId");
 
